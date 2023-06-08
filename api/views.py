@@ -1,3 +1,8 @@
 from django.shortcuts import render
+from django.views import View
+from django.http import HttpRequest
 
-# Create your views here.
+
+class HomeView(View):
+    def get(self, request: HttpRequest):
+        return render(request=request, template_name='home.html')
