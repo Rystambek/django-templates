@@ -6,3 +6,7 @@ from django.http import HttpRequest
 class HomeView(View):
     def get(self, request: HttpRequest):
         return render(request=request, template_name='home.html')
+    
+class hello(View):
+    def get(self, request: HttpRequest):
+        return render(request=request, template_name='rustam.html')

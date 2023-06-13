@@ -16,10 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from api.views import HomeView
+from api.views import HomeView,hello
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', HomeView.as_view()),
+    path('rustam/',hello.as_view())
 ]
